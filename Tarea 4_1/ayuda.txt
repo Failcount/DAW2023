@@ -1,0 +1,3 @@
+Os dejo index.php para que hagáis únicamente el form.php.
+Fijaos que podéis seleccionar varias prendas de ropa con Ctrl. Se envía al form.php un array.
+Si no se especifica el método, se envía por GET (podréis visualizarlo en la URL)
