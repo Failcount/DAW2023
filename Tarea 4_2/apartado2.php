@@ -21,10 +21,17 @@
 
             </select>
 
-            <label for="reservas-id">Seleccione tipo de prenda:</label>
-            <select name="prendas[]" id="prendas-id" multiple>
-                <option date="date">Introduzca fecha:</option>
-                <option time="time">Introduzca hora comida:</option>
+            <label for="radio-id">Ubicacion:</label>
+            <input type="radio" name="Interior" value="Interior">Interior<br>
+            <input type="radio" name="Interior" value="Interior">Terraza<br>
+
+            <label for="time-id">Introduzca la hora comida:</label>
+            <input type="time" name="time" id="time-id">
+
+            
+            <label for="ubication-id">Introduzca la hora comida:</label>
+            <input type="time" name="time" id="time-id">
+
             </select>
             <!! TO DO UBICACION -->
         </p>
