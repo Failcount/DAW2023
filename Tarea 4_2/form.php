@@ -1,26 +1,26 @@
 <?php
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    if ($_POST != null) {
 
-
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $fecha = $_POST["time"];
+        $hora = $_POST["hour"];
     
 
-    //En $_SERVER se guardan las variables del servidor
-    var_dump($_SERVER) ;
-    //En $_POST se guardan los detalles del formulario que se han enviado por el metodo post.
-    //En este caso tenemos dos array , uno de prendas y otro de color.
+        if (in_array("Leche" , $_POST["alergias"])) {
 
-    var_dump($_POST) ;
-    var_dump($_POST['prendas']) ;
-
-    foreach ($_POST as $key => $value){
-
-        echo $key . " " . $value. "\n";
-
+            echo "<h1>☝El cliente es alergico a la Leche</h1>";
+            echo "<h1>☝El cliente tiene reserva para el día:.$fecha.</h1>";
+            echo "<h1>☝El cliente tiene reserva para la hora:.$hora.</h1>";
+        } elseif (in_array("Huevos" , $_POST["alergias"])) {
+            echo "<h1>☝El cliente es alergico al Huevo</h1>";
+            echo "<h1>☝El cliente tiene reserva para el día:.$fecha.</h1>";
+            echo "<h1>☝El cliente tiene reserva para la hora:.$hora.</h1>";
+        } elseif (in_array("Gluten" , $_POST["alergias"])) {
+            echo "<h1>☝El cliente es alergico al Gluten</h1>";
+            echo "<h1>☝El cliente tiene reserva para el día:.$fecha.</h1>";
+            echo "<h1>☝El cliente tiene reserva para la hora:.$hora.</h1>";
+        }
     }
-     
 }
-
-
-?>

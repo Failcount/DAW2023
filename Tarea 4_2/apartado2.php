@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de moda</title>
+    <title>RESERVAS Lunch</title>
 </head>
 
 <body>
-    <h1></h1>
+    <h1>RESERVAS Lunch</h1>
 
     <form action="form.php" method="POST">
         <p>
@@ -19,31 +19,32 @@
                 <option value="Huevo">Huevo</option>
                 <option value="Gluten">Gluten</option>
 
+                
             </select>
-
+            <br>
             <label for="radio-id">Ubicacion:</label>
-            <input type="radio" name="Interior" value="Interior">Interior<br>
-            <input type="radio" name="Interior" value="Interior">Terraza<br>
+            <input type="radio" name="Interior" value="Interior">Interior
+            <input type="radio" name="Interior" value="Interior"checked="checked">Terraza <br>
+            <br>
+            <label for="time-id">Introduzca la fecha comida:</label>
+            <input type="date" name="time" id="time-id" value=<?php echo date('Y-m-d\TH:i:s'); ?> min=<?php echo date('Y-m-d\TH:i:s'); ?> required><br>
 
-            <label for="time-id">Introduzca la hora comida:</label>
-            <input type="time" name="time" id="time-id">
-
-            
-            <label for="ubication-id">Introduzca la hora comida:</label>
-            <input type="time" name="time" id="time-id">
+            <br>
+            <label for="hour-id">Introduzca la hora comida:</label>
+            <input type="time" name="hour" id="hour-id" default= "13:00" Min="13:00" Max="15:00"></label>
 
             </select>
-            <!! TO DO UBICACION -->
-        </p>
-        <p>
-            <label for="color-id">Color</label>
-            <input type="color" name="color" id="color-id">
+
         </p>
 
-        <input type="submit" value="Reservar">
+       <input type="submit" value="Reservar">
       
 
     </form>
+
+
+
+    
 
 </body>
 
