@@ -26,7 +26,7 @@
             <input type="radio" name="Interior" value="Interior">Interior
             <input type="radio" name="Interior" value="Interior"checked="checked">Terraza <br>
             <br>
-            <label for="time-id">Introduzca la fecha comida:</label>
+            <label for="time-id">Introduzca la fecha de la comida:</label>
             <input type="date" name="time" id="time-id" value=<?php echo date('Y-m-d\TH:i:s'); ?> min=<?php echo date('Y-m-d\TH:i:s'); ?> required><br>
 
             <br>
